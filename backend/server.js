@@ -22,6 +22,10 @@ app.use((err, req, res, next) => {
 });
 app.use("/api/atm", require("./routes/atmroutes"));
 
+app.get("/", (req, res) => {
+    res.send("Smart ATM Backend is Running 🚀");
+});
+
 app.listen(process.env.PORT || 5000, () => {
   console.log("Server Running");
 });
