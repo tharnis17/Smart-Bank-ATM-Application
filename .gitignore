@@ -18,3 +18,7 @@ yarn-error.log*
 
 #coverage reports
 coverage/
+
+node_modules
+.env
+dist
